@@ -1,0 +1,229 @@
+/* ------- Overall ------ */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: darkgray;
+    background-color: #f3f3f3;
+}
+
+.container {
+    max-width: 960px;
+    width: 96%;
+    min-width: 470px;
+    margin: auto;
+}
+
+/* ------- Header -------*/
+
+.head {
+    background-color:#ffffff;
+    width: 100%;
+    height: 100px;   
+}
+.logo {
+    position: relative;
+    float: left;
+    color: #fff;
+    background-color: #4aaaa5;
+    width: 240px;
+    height: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav {
+    position: relative;
+    float: right;
+    line-height: 70px;
+}
+
+nav li {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#e6e6e6;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    width:75px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+nav1 {
+    position: relative;
+    float: left;
+    line-height: 70px;
+}
+
+nav1 li-1, li-2, li-3, li-4, li-5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:#e6e6e6;
+    display: inline-block;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 250px;
+    height: 250px;
+    background-color: none;
+    margin-top: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+/* ------- Content -------*/
+
+.contentbox {
+    background-color: #fff;
+    width: 100%;
+    min-height: 400px;
+    height: max-content;
+
+}
+
+.contentbox_port {
+    overflow: auto;
+    background-color: #fff;
+    width: 100%;
+    min-height: 400px;
+    height: max-content;
+
+}
+
+
+.page_title {
+    color: #4aaaa5;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 35px;
+    padding-top: 25px;
+}
+
+.aboutmeline {
+    position: relative;
+    float: left;
+    width: 97%;
+    height: 3px;
+    background-color: #e6e6e6;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.my_image {
+    width: 180px;
+    height: 180px;
+    margin-right: 75px;
+    margin-bottom: 75px;
+    float: left;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#666666;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.greenfooter {
+    position: relative;
+    float: top;
+    width: 100%;
+    height: 5px;
+    background-color: #4aaaa5;
+}
+
+.footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: center;
+    float: bottom;
+    color: #fff;
+    background-color: #666666;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 10px;
+    padding-top: 35px;
+}
+
+/*----- Portfolio Page -------*/
+
+
+/*--  Contact Form --*/
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 30px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #065844;
+}
+
+/* Add a background color and some padding around the form */
+.container_contact {
+    size: 90%;
+    position: relative;
+
+    background-color: #f2f2f2;
+    max-height:  500px;
+    padding: 10px;
+    width: 900px;
+    height: max-content;
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.contentbox3 {
+    background-color: #fff;
+    width: 100%;
+    min-height: 500px;
+    height: max-content;
+    padding: 50px, 50px, 50px, 50px;
+}
+
+
+@media (min-width: 0px) and (max-width: 640px) {
+    nav {float: left; margin-left: 20px;}
+    .logo {width: 100%; text-align: left; padding-left: 125px;}
+    .contentbox {margin-top: 60px;}
+    .contentbox3 {margin-top: 60px;}
+    form {width: 640px; height: 800px; overflow: auto;}
+    
+}
+
+@media (min-width:641px) and (max-width: 768px) {
+    nav {float: right;}
+    .contentbox {margin-top: 60px;}
+    .contentbox3 {margin-top: 50px;}
+    form {margin-top: 10px;}
+}
+
+@media (min-width:769px) and (max-width: 980px) {
+    nav {float: right;}
+    form {margin-top: 10px;}
+}
+
